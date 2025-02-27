@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=3 uid="uid://b4ig74k3gneph"]
+
+[ext_resource type="Texture2D" uid="uid://de3cxjh371a6o" path="res://Player/Sprite-MAN_OriginaHELLl (2).png" id="1"]
+[ext_resource type="Script" path="res://ВеткиOBJ/Player.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b7sxm3savt436" path="res://Player/Sprite-MAN_RUNNING_Stand (2).png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(8, 14)
+
+[sub_resource type="AtlasTexture" id="11"]
+atlas = ExtResource("1")
+region = Rect2(119, 0, 17, 33)
+
+[sub_resource type="AtlasTexture" id="12"]
+atlas = ExtResource("3")
+region = Rect2(0, 0, 23, 30)
+
+[sub_resource type="AtlasTexture" id="13"]
+atlas = ExtResource("3")
+region = Rect2(92, 0, 23, 30)
+
+[sub_resource type="AtlasTexture" id="14"]
+atlas = ExtResource("3")
+region = Rect2(23, 0, 23, 30)
+
+[sub_resource type="AtlasTexture" id="8"]
+atlas = ExtResource("1")
+region = Rect2(102, 0, 17, 33)
+
+[sub_resource type="AtlasTexture" id="7"]
+atlas = ExtResource("1")
+region = Rect2(85, 0, 17, 33)
+
+[sub_resource type="AtlasTexture" id="5"]
+atlas = ExtResource("1")
+region = Rect2(51, 0, 17, 33)
+
+[sub_resource type="AtlasTexture" id="6"]
+atlas = ExtResource("1")
+region = Rect2(68, 0, 17, 33)
+
+[sub_resource type="AtlasTexture" id="4"]
+atlas = ExtResource("1")
+region = Rect2(34, 0, 17, 33)
+
+[sub_resource type="SpriteFrames" id="10"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("11")
+}],
+"loop": true,
+"name": &"Odle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("12")
+}, {
+"duration": 1.0,
+"texture": SubResource("13")
+}, {
+"duration": 1.0,
+"texture": SubResource("14")
+}],
+"loop": true,
+"name": &"Running",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("8")
+}, {
+"duration": 1.0,
+"texture": SubResource("7")
+}, {
+"duration": 1.0,
+"texture": SubResource("5")
+}, {
+"duration": 1.0,
+"texture": SubResource("6")
+}, {
+"duration": 1.0,
+"texture": SubResource("4")
+}],
+"loop": true,
+"name": &"Wallking",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-0.304349, -8.975)
+scale = Vector2(0.506394, 0.54697)
+sprite_frames = SubResource("10")
+animation = &"Running"
+speed_scale = 0.8

@@ -1,0 +1,97 @@
+[gd_scene load_steps=18 format=3 uid="uid://g1fa0w1wnx0f"]
+
+[ext_resource type="PackedScene" uid="uid://b4ig74k3gneph" path="res://ВеткиOBJ/Player.tscn" id="2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_epfwe"]
+margins = Vector2i(32, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xtydx"]
+margins = Vector2i(32, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysg0a"]
+margins = Vector2i(48, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mlnar"]
+margins = Vector2i(48, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ejpxi"]
+margins = Vector2i(32, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h8giv"]
+margins = Vector2i(48, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joelg"]
+margins = Vector2i(16, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n7jks"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwqwl"]
+margins = Vector2i(32, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hokwy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1si74"]
+margins = Vector2i(32, 16)
+texture_region_size = Vector2i(16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uha4d"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqg81"]
+margins = Vector2i(54, 42)
+texture_region_size = Vector2i(1, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yrftt"]
+margins = Vector2i(16, 32)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgk4t"]
+margins = Vector2i(16, 16)
+
+[sub_resource type="TileSet" id="1"]
+sources/0 = SubResource("TileSetAtlasSource_epfwe")
+sources/1 = SubResource("TileSetAtlasSource_xtydx")
+sources/2 = SubResource("TileSetAtlasSource_n7jks")
+sources/3 = SubResource("TileSetAtlasSource_xwqwl")
+sources/4 = SubResource("TileSetAtlasSource_hokwy")
+sources/5 = SubResource("TileSetAtlasSource_1si74")
+sources/6 = SubResource("TileSetAtlasSource_uha4d")
+sources/7 = SubResource("TileSetAtlasSource_bqg81")
+sources/8 = SubResource("TileSetAtlasSource_yrftt")
+sources/9 = SubResource("TileSetAtlasSource_sgk4t")
+sources/10 = SubResource("TileSetAtlasSource_ysg0a")
+sources/11 = SubResource("TileSetAtlasSource_mlnar")
+sources/12 = SubResource("TileSetAtlasSource_ejpxi")
+sources/13 = SubResource("TileSetAtlasSource_h8giv")
+sources/14 = SubResource("TileSetAtlasSource_joelg")
+
+[node name="Base_Level" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("1")
+format = 2
+
+[node name="World" type="Node" parent="."]
+
+[node name="Player" parent="World" instance=ExtResource("2")]
+position = Vector2(-1, 1)
+collision_layer = 2
+
+[node name="Camera2D" type="Camera2D" parent="World/Player"]
+position = Vector2(-2, -5)
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_right_margin = 0.1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="World"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="World/ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="World/ParallaxBackground/ParallaxLayer"]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="World/ParallaxBackground"]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="World/ParallaxBackground"]
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="World/ParallaxBackground"]

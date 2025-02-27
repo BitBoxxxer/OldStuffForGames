@@ -1,0 +1,50 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Project Obj"
+run/main_scene="res://ВеткиOBJ/Player.tscn"
+config/features=PackedStringArray("4.3")
+
+[display]
+
+window/size/viewport_width=400
+window/size/viewport_height=200
+window/size/window_width_override=400
+window/size/window_height_override=200
+window/stretch/mode="2d"
+window/stretch/aspect="keep_height"
+window/per_pixel_transparency/allowed=true
+window/size/fullscreen=true
+window/per_pixel_transparency/enabled=true
+
+[dotnet]
+
+project/assembly_name="Project Obj"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[layer_names]
+
+2d_physics/layer_1="environment"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemy"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true

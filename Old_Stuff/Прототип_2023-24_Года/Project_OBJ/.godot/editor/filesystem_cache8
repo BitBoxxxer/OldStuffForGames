@@ -1,0 +1,47 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1738695796
+::res://_ORIGIANAL_Tiles/::1738695763
+Sprite-enemy.png::CompressedTexture2D::5852751303440158380::1689925605::1704113776::1::::<><>::
+Sprite-MAN_Original.png::CompressedTexture2D::15884067017619519::1689925605::1704113776::1::::<><>::
+Sprite-MAN_WALK_Stand — копия.png::CompressedTexture2D::9216145603757046035::1689925605::1704113776::1::::<><>::
+Sprite-Ostrov_Sprites_TileMap.png::CompressedTexture2D::935027895213549224::1689925605::1704113776::1::::<><>::
+::res://Map_Details/::1738695763
+Sprite-Broken_DOOR_Animation.png::CompressedTexture2D::401304449094510326::1689898096::1704113776::1::::<><>::
+Sprite-DOOR_LOCKED.png::CompressedTexture2D::8109443590317554140::1689898096::1704113776::1::::<><>::
+Sprite-DOOR_Open.png::CompressedTexture2D::2184199633618813255::1689898096::1704113776::1::::<><>::
+Sprite-DOOR_OPEN_____Animation.png::CompressedTexture2D::3853686138556837223::1689898096::1704113776::1::::<><>::
+Sprite-Kover.png::CompressedTexture2D::6952137287552467562::1689898096::1704113776::1::::<><>::
+Sprite-Lamp.png::CompressedTexture2D::8026381226642620531::1689898096::1704113776::1::::<><>::
+Sprite-Ostrov_Sprites_TileMap.png::CompressedTexture2D::5945022831217271870::1689925584::1704113776::1::::<><>::
+Sprite-Smashed_Lamp.png::CompressedTexture2D::2049326496143026650::1689898096::1704113776::1::::<><>::
+Sprite-Torch.png::CompressedTexture2D::96492154885079376::1689898096::1704113776::1::::<><>::
+Sprite-WALL.png::CompressedTexture2D::136405658757929276::1689898096::1704113776::1::::<><>::
+Sprite-Wall_Wallking.png::CompressedTexture2D::2373008813242216775::1689898096::1704113776::1::::<><>::
+::res://Persons/::1738695763
+Sprite-Atack_frm_Skull.png::CompressedTexture2D::4724446235560077179::1690625976::1704113776::1::::<><>::
+Sprite-Attack_frm_Diavol.png::CompressedTexture2D::7340345415501731994::1690625976::1704113776::1::::<><>::
+Sprite-Diavol_Pushing.png::CompressedTexture2D::1216333781938972082::1690625976::1704113776::1::::<><>::
+Sprite-Diavol_Running.png::CompressedTexture2D::478556960081819263::1690625976::1704113776::1::::<><>::
+Sprite-Diavol_Stand.png::CompressedTexture2D::2741365880547910936::1690625976::1704113776::1::::<><>::
+Sprite-MAN_WALK_Stand — копия (2).png::CompressedTexture2D::2434506504626241751::1690625976::1704113776::1::::<><>::
+Sprite-Skull.png::CompressedTexture2D::17950647922658988::1690625976::1704113776::1::::<><>::
+Sprite-Tank-Diavol_Stand.png::CompressedTexture2D::3062689730016477617::1690625976::1704113776::1::::<><>::
+::res://Persons/Ahtn/::1738695763
+Sprite-ANTH1.png::CompressedTexture2D::6983923527216527315::1704117867::1705004323::1::::<><>::
+Sprite-ANTH2.png::CompressedTexture2D::7442626826743279000::1704117867::1705004323::1::::<><>::
+Sprite-ANTH3.png::CompressedTexture2D::5379080167867425909::1704117867::1705004323::1::::<><>::
+Sprite-ANTH4.png::CompressedTexture2D::4921019921300321314::1704117867::1705004323::1::::<><>::
+Sprite-ANTH.png::CompressedTexture2D::9046729517943319956::1690625976::1705004323::1::::<><>::
+::res://Player/::1738695763
+Sprite-MAN_ATTACK_Stand.png::CompressedTexture2D::8363641924812073234::1689898088::1704113776::1::::<><>::
+Sprite-MAN_DOWN_walk_Stand.png::CompressedTexture2D::702322757963929737::1689898088::1704113776::1::::<><>::
+Sprite-MAN_OriginaHELLl (2).png::CompressedTexture2D::7497982994830211772::1689930104::1704113776::1::::<><>::
+Sprite-MAN_RUNNING_Stand (2).png::CompressedTexture2D::4671041898532828595::1689898088::1704113776::1::::<><>::
+Sprite-MAN_WALK_Stand — копия.png::CompressedTexture2D::8662033866484898611::1689898088::1704113776::1::::<><>::
+Sprite-MAN_Walllking.png::CompressedTexture2D::7831353477125646959::1689929075::1704113776::1::::<><>::
+::res://ВеткиOBJ/::1738695763
+Enemy.gd::GDScript::-1::1704113748::0::1::::<>CharacterBody2D<>::
+Enemy.tscn::PackedScene::-1::1704113748::0::1::::<><>::res://ВеткиOBJ/Enemy.gd<>res://Persons/Sprite2D-Diavol_Running.png<>res://Persons/Sprite2D-Diavol_Stand.png<>res://Persons/Sprite2D-Diavol_Pushing.png
+Node2D.tscn::PackedScene::-1::1704113748::0::1::::<><>::res://_ORIGIANAL_Tiles/Sprite2D-Ostrov_Sprites_TileMap.png<>res://ВеткиOBJ/Player.tscn
+Player.gd::GDScript::-1::1704113748::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::4438835158495998173::1716142083::0::1::::<><>::uid://de3cxjh371a6o::::res://Player/Sprite-MAN_OriginaHELLl (2).png<>res://ВеткиOBJ/Player.gd<>uid://b7sxm3savt436::::res://Player/Sprite-MAN_RUNNING_Stand (2).png
